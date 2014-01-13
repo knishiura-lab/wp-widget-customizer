@@ -304,7 +304,7 @@ var WidgetCustomizer = (function ($) {
 			}
 
 			var customize_control_type = 'widget_form';
-			var customize_control = $('<li></li>');
+			var customize_control = $('<td></td>');
 			customize_control.addClass( 'customize-control' );
 			customize_control.addClass( 'customize-control-' + customize_control_type );
 			customize_control.append( $( control_html ) );
