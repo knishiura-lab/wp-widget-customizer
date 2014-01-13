@@ -115,14 +115,7 @@ var WidgetCustomizer = (function ($) {
 		/**
 		 * Set up the control
 		 */
-		ready: function() {
-			var control = this;
-			control.control_section = control.container.closest( '.control-section' );
-			control.section_content = control.container.closest( '.accordion-section-content' );
-			control.setupModel();
-			control.setupSortable();
-			control.setupAddition();
-		},
+
 
 		/**
 		 * Update ordering of widget control forms when the setting is updated
