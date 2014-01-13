@@ -26,7 +26,7 @@ var WidgetCustomizer = (function ($) {
 
 	// Unfortunately many widgets try to look for instances under div#widgets-right,
 	// so we have to add that ID to a container div in the customizer for compat
-	$( '#customize-theme-controls' ).closest( 'div:not([id])' ).attr( 'id', 'widgets-right' );
+	$( '#customize-theme-controls' ).closest( 'div:not([id])' ).attr( 'id', 'widgets-top' );
 
 	/**
 	 * Set up model
