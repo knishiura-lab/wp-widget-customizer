@@ -448,7 +448,7 @@ var WidgetCustomizer = (function ($) {
 				control.container.find( '.widget-top .widget-action:first' ).focus(); // keyboard accessibility
 			} );
 
-			var remove_btn = control.container.find( 'a.widget-control-remove' );
+			var remove_btn = control.container.find( 'a' );
 			// @todo Hitting Enter on this link does nothing; will be resolved in core with <http://core.trac.wordpress.org/ticket/26633>
 			remove_btn.on( 'click', function (e) {
 				e.preventDefault();
