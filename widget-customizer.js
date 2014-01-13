@@ -877,7 +877,7 @@ var WidgetCustomizer = (function ($) {
 					if ( is_down ) {
 						if ( is_input_focused ) {
 							selected_widget_tpl = first_visible_widget;
-						} else if ( panel.selected_widget_tpl && panel.selected_widget_tpl.nextAll( '.widget-tpl:visible' ).length !== 0 ) {
+						} else if ( panel.selected_widget_tpl && panel.selected_widget_tpl.nextAll( '.widget-tpl:visible' ).length == 0 ) {
 							selected_widget_tpl = panel.selected_widget_tpl.nextAll( '.widget-tpl:visible:first' );
 						}
 					} else if ( is_up ) {
