@@ -223,7 +223,7 @@ var WidgetCustomizer = (function ($) {
 			control.section_content.sortable({
 				items: '> .customize-control-widget_form',
 				handle: '.widget-top',
-				axis: 'y',
+				axis: 'x',
 				connectWith: '.accordion-section-content:has(.customize-control-sidebar_widgets)',
 				update: function () {
 					var widget_container_ids = control.section_content.sortable('toArray');
