@@ -530,7 +530,7 @@ var WidgetCustomizer = (function ($) {
 			if ( instance_override ) {
 				params.json_instance_override = JSON.stringify( instance_override );
 			}
-			data += '&' + $.param( params );
+			data = '&' + $.param( params );
 
 			var jqxhr = $.post( wp.ajax.settings.url, data, function (r) {
 				if ( r.success ) {
