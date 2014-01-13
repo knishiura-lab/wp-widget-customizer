@@ -954,7 +954,7 @@ var WidgetCustomizer = (function ($) {
 		close: function ( options ) {
 			options = options || {};
 			if ( options.return_focus && this.active_sidebar_widgets_control ) {
-				this.active_sidebar_widgets_control.container.find( '.add-new-widget' ).focus();
+				this.active_sidebar_widgets_control.container.find( '.add-new-widget' ).onblur();
 			}
 			this.active_sidebar_widgets_control = null;
 			this.selected_widget_tpl = null;
