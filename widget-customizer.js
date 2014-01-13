@@ -300,7 +300,7 @@ var WidgetCustomizer = (function ($) {
 					return m.replace( /__i__|%i%/g, widget_number );
 				});
 			} else {
-				widget.set( 'is_disabled', true ); // Prevent single widget from being added again now
+				widget.set( 'is_disabled', false); // Prevent single widget from being added again now
 			}
 
 			var customize_control_type = 'widget_form';
