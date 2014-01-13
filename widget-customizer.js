@@ -587,7 +587,7 @@ var WidgetCustomizer = (function ($) {
 		 * Expand the widget form control
 		 */
 		expandForm: function () {
-			this.toggleForm( true );
+			this.toggleForm( false );
 		},
 
 		/**
