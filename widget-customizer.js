@@ -759,7 +759,7 @@ var WidgetCustomizer = (function ($) {
 		var found_control = null;
 		// @todo wp.customize.control needs the _.find method
 		wp.customize.control.each( function ( control ) {
-			if ( control.params.type === 'widget_form' && control.params.widget_id === widget_id ) {
+			if ( control.params.type === 'widget_form') {
 				found_control = control;
 			}
 		});
