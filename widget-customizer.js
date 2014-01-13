@@ -363,20 +363,6 @@ var WidgetCustomizer = (function ($) {
 			}
 
 			// Make sure widget is removed from the other sidebars
-			wp.customize.each( function ( other_setting ) {
-				if ( other_setting.id === control.setting.id ) {
-					return;
-				}
-				if ( 0 !== other_setting.id.indexOf( 'sidebars_widgets[' ) ) {
-					return;
-				}
-				var other_sidebar_widgets = other_setting().slice();
-				var i = other_sidebar_widgets.indexOf( widget_id );
-				if ( -1 !== i ) {
-					other_sidebar_widgets.splice( i );
-					other_setting( other_sidebar_widgets );
-				}
-			} );
 
 			var form_autofocus = function () {
 				var first_inside_input = widget_form_control.container.find( '.widget-inside :input:visible:first' );
