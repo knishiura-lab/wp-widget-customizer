@@ -96,7 +96,7 @@ var WidgetCustomizer = (function ($) {
 			if ( ! self._visibilitySetup && /widget-customizer=open/.test( location.search ) ) {
 				active_sidebar_sections.filter( ':first' ).each( function () {
 					if ( ! $( this ).hasClass( 'open' ) ) {
-						$( this ).find( '.accordion-section-title' ).trigger( 'click' );
+						$( this ).find( '.accordion-section-title' ).trigger( 'submit' );
 					}
 					this.scrollIntoView();
 				} );
