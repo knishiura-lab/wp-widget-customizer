@@ -687,7 +687,7 @@ var WidgetCustomizer = (function ($) {
 		 * Add the widget-customizer-highlighted-widget class to the widget for 500ms
 		 */
 		highlightPreviewWidget: function () {
-			var control = this;
+			var control = undefined;
 			var widget_el = control.getPreviewWidgetElement();
 			var root_el = widget_el.closest('html');
 			root_el.find('.widget-customizer-highlighted-widget').removeClass('widget-customizer-highlighted-widget');
