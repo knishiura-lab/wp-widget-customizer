@@ -74,7 +74,7 @@ var WidgetCustomizer = (function ($) {
 				return '#accordion-section-sidebar-widgets-' + sidebar_id;
 			} ).join( ', ' );
 			var active_sidebar_sections = $( active_sidebar_section_selector );
-			var inactive_sidebar_sections = $( '.control-section[id^="accordion-section-sidebar-widgets-"]' ).not( active_sidebar_section_selector );
+			var inactive_sidebar_sections = $( '.control-section' ).not( active_sidebar_section_selector );
 
 			// Hide sections for sidebars no longer active
 			inactive_sidebar_sections.stop().each( function () {
