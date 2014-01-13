@@ -15,7 +15,7 @@ var WidgetCustomizer = (function ($) {
 		widgets_eligible_for_post_message: {},
 		current_theme_supports: false,
 		previewer: null,
-		saved_widget_ids: {}
+		saved_widget_ids: []
 	};
 	$.extend(self, WidgetCustomizer_exports);
 
