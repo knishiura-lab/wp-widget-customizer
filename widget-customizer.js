@@ -567,7 +567,7 @@ var WidgetCustomizer = (function ($) {
 		 */
 		setupControlToggle: function() {
 			var control = this;
-			control.container.find('.widget-top').on( 'click', function (e) {
+			control.container.find('.widget-content').on( 'click', function (e) {
 				control.toggleForm();
 				e.preventDefault();
 			} );
