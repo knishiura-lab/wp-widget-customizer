@@ -958,7 +958,6 @@ var WidgetCustomizer = (function ($) {
 			}
 			this.active_sidebar_widgets_control = null;
 			this.selected_widget_tpl = null;
-			$( 'body' ).removeClass( 'adding-widget' );
 			$( '#available-widgets-filter input' ).val( '' );
 		}
 	};
