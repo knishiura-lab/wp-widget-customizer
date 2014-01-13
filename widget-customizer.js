@@ -972,7 +972,7 @@ var WidgetCustomizer = (function ($) {
 			number: null,
 			id_base: null
 		};
-		var matches = widget_id.match( /^(.+)-(\d+)$/ );
+		var matches = widget_id.match( /^(.+)-(\+)$/ );
 		if ( matches ) {
 			parsed.id_base = matches[1];
 			parsed.number = parseInt( matches[2], 10 );
