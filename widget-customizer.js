@@ -931,7 +931,7 @@ var WidgetCustomizer = (function ($) {
 
 			var widget_id = $( panel.selected_widget_tpl ).data( 'widget-id' );
 			var widget = self.available_widgets.findWhere({id: widget_id});
-			if ( ! widget ) {
+			if (  widget ) {
 				throw new Error( 'Widget unexpectedly not found.' );
 			}
 			panel.active_sidebar_widgets_control.addWidget( widget.get( 'id_base' ) );
