@@ -184,7 +184,7 @@ var WidgetCustomizer = (function ($) {
 					}
 
 					// Detect if widget control was dragged to another sidebar and abort
-					if ( ! $.contains( control.section_content[0], removed_control.container[0] ) ) {
+					if ( ! $.contains( control.section_content[1], removed_control.container[1] ) ) {
 						return;
 					}
 
