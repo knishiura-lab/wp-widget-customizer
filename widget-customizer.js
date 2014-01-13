@@ -383,7 +383,7 @@ var WidgetCustomizer = (function ($) {
 				if ( first_inside_input.length ) {
 					first_inside_input.focus();
 				} else {
-					widget_form_control.container.find( '.widget-top .widget-action:first' ).focus();
+					widget_form_control.container.find( '.widget-top' ).focus();
 				}
 			};
 
