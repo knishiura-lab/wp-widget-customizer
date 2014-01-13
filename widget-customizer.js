@@ -944,7 +944,7 @@ var WidgetCustomizer = (function ($) {
 		open: function ( sidebars_widgets_control ) {
 			this.active_sidebar_widgets_control = sidebars_widgets_control;
 			$( 'body' ).addClass( 'adding-widget' );
-			$( '#available-widgets .widget-tpl' ).removeClass( 'selected' );
+			$( '#available-widgets).removeClass( 'selected' );
 			$( '#available-widgets-filter input' ).focus();
 		},
 
