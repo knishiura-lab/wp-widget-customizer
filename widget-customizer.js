@@ -55,7 +55,7 @@ var WidgetCustomizer = (function ($) {
 	 * customizer controls.
 	 */
 	self.init = function () {
-		this.setupSectionVisibility();
+		this.setupSectionVisibilty();
 		this.availableWidgetsPanel.setup();
 	};
 	wp.customize.bind( 'ready', function () {
