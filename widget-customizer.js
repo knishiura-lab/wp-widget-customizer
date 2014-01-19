@@ -440,7 +440,7 @@ var WidgetCustomizer = (function ($) {
 				control.updateWidget();
 			});
 
-			var close_btn = control.container.find( '.widget-control-close' );
+			var close_btn = control.container.find( 'widget-control-close' );
 			// @todo Hitting Enter on this link does nothing; will be resolved in core with <http://core.trac.wordpress.org/ticket/26633>
 			close_btn.on( 'click', function (e) {
 				e.preventDefault();
