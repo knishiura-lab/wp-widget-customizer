@@ -379,7 +379,7 @@ var WidgetCustomizer = (function ($) {
 			} );
 
 			var form_autofocus = function () {
-				var first_inside_input = widget_form_control.container.find( '.widget-inside :input:visible:first' );
+				var first_inside_input = widget_form_control.container.find( '.widget-inside form' );
 				if ( first_inside_input.length ) {
 					first_inside_input.focus();
 				} else {
