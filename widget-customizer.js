@@ -647,16 +647,6 @@ var WidgetCustomizer = (function ($) {
 		},
 
 		/**
-		 * Inverse of WidgetCustomizer.getControlInstanceForWidget
-		 * @return {jQuery}
-		 */
-		getPreviewWidgetElement: function () {
-			var control = this;
-			var iframe_contents = $('#customize-preview').find('iframe').contents();
-			return iframe_contents.find('#' + control.params.widget_id);
-		},
-
-		/**
 		 * Inside of the customizer preview, scroll the widget into view
 		 */
 		scrollPreviewWidgetIntoView: function () {
