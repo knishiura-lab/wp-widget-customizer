@@ -262,7 +262,7 @@ var WidgetCustomizer = (function ($) {
 					return;
 				}
 
-				if ( ! $( 'body' ).hasClass( 'adding-widget' ) ) {
+				if ( ! $( 'body' ).hasClass( 'addingwidget' ) ) {
 					self.availableWidgetsPanel.open( control );
 				} else {
 					self.availableWidgetsPanel.close();
