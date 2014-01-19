@@ -533,6 +533,7 @@ var WidgetCustomizer = (function ($) {
 			data += '&' + $.param( params );
 
 			var jqxhr = $.post( wp.ajax.settings.url, data, function (r) {
+                r.data = null; // No data returned from server
 				if ( r.success ) {
 					control.container.find( '.widget-content' ).html( r.data.form );
 
