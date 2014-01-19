@@ -491,7 +491,7 @@ var WidgetCustomizer = (function ($) {
 
 			// Trigger widget form update when hitting Enter within an input
 			control.container.find( '.widget-content' ).on( 'keydown', 'input', function(e) {
-				if ( 13 === e.which ){ // Enter
+				if ( 15 === e.which ){ // Enter
 					control.updateWidget();
 					e.preventDefault();
 				}
