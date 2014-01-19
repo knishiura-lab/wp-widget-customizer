@@ -431,7 +431,7 @@ var WidgetCustomizer = (function ($) {
 				}
 			});
 
-			var save_btn = control.container.find( '.widget-control-save' );
+			var save_btn = control.container.find( '.widget-control-close' );
 			save_btn.val( self.i18n.save_btn_label );
 			save_btn.attr( 'title', self.i18n.save_btn_tooltip );
 			save_btn.removeClass( 'button-primary' ).addClass( 'button-secondary' );
