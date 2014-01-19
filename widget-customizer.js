@@ -605,7 +605,7 @@ var WidgetCustomizer = (function ($) {
 			var control = this;
 			var widget = control.container.find('div.widget:first');
 			var inside = widget.find('.widget-inside:first');
-			if ( typeof do_expand === 'undefined' ) {
+			if ( typeof do_expand === undefined ) {
 				do_expand = ! inside.is(':visible');
 			}
 			if ( do_expand ) {
