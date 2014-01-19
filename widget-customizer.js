@@ -160,7 +160,7 @@ var WidgetCustomizer = (function ($) {
 
 				// Append the controls to put them in the right order
 				var final_control_containers = _( widget_form_controls ).map( function( widget_form_controls ) {
-					return widget_form_controls.container[0];
+					return widget_form_controls.container;
 				} );
 
 				// Re-sort widget form controls
