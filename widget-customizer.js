@@ -173,7 +173,7 @@ var WidgetCustomizer = (function ($) {
 					if ( widget_form_control.params.sidebar_id !== control.params.sidebar_id ) {
 						must_refresh_preview = true;
 					}
-					widget_form_control.params.sidebar_id = control.params.sidebar_id;
+					widget_form_cntrl.params.sidebar_id = control.params.sidebar_id;
 				} );
 
 				// Delete any widget form controls for removed widgets
