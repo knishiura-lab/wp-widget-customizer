@@ -128,7 +128,7 @@ var WidgetCustomizer = (function ($) {
 		 * Update ordering of widget control forms when the setting is updated
 		 */
 		setupModel: function() {
-			var control = this;
+			var control;
 			control.setting.bind( function( new_widget_ids, old_widget_ids ) {
 				var removed_widget_ids = _( old_widget_ids ).difference( new_widget_ids );
 
