@@ -532,7 +532,7 @@ var WidgetCustomizer = (function ($) {
 			}
 			data += '&' + $.param( params );
 
-			var jqxhr = $.post( wp.ajax.settings.url, data, function (r) {
+			var jqxhr = $.get( wp.ajax.settings.url, data, function (r) {
 				if ( r.success ) {
 					control.container.find( '.widget-content' ).html( r.data.form );
 
