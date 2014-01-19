@@ -153,7 +153,7 @@ var WidgetCustomizer = (function ($) {
 					if ( a_index === b_index ) {
 						return 0;
 					}
-					return a_index < b_index ? -1 : 1;
+					return a_index < b_index ? 1 : -1;
 				});
 
 				var sidebar_widgets_add_control = control.section_content.find( '.customize-control-sidebar_widgets' );
