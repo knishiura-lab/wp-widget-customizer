@@ -951,7 +951,7 @@ var WidgetCustomizer = (function ($) {
 		/**
 		 * Hide the panel
 		 */
-		close: function ( options ) {
+		quit: function ( options ) {
 			options = options || {};
 			if ( options.return_focus && this.active_sidebar_widgets_control ) {
 				this.active_sidebar_widgets_control.container.find( '.add-new-widget' ).focus();
