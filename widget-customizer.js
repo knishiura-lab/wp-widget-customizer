@@ -71,7 +71,7 @@ var WidgetCustomizer = (function ($) {
 		self.previewer.bind( 'rendered-sidebars', function ( rendered_sidebars ) {
 
 			var active_sidebar_section_selector = $.map( rendered_sidebars, function ( sidebar_id ) {
-				return '#accordion-section-sidebar-widgets-' + sidebar_id;
+				return '#accordion-section-sidebar-widgets' + sidebar_id;
 			} ).join( ', ' );
 			var active_sidebar_sections = $( active_sidebar_section_selector );
 			var inactive_sidebar_sections = $( '.control-section[id^="accordion-section-sidebar-widgets-"]' ).not( active_sidebar_section_selector );
