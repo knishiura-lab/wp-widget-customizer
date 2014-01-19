@@ -88,7 +88,7 @@ var WidgetCustomizer = (function ($) {
 
 			// Show sections for sidebars now active
 			active_sidebar_sections.stop().slideDown( function () {
-				$( this ).css( 'height', 'auto' ); // so that the .accordion-section-content won't overflow
+				this.css( 'height', 'auto' ); // so that the .accordion-section-content won't overflow
 			} );
 
 			// Open the first visible sidebar section automatically if widget customizer
