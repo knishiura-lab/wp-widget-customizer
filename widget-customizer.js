@@ -228,7 +228,7 @@ var WidgetCustomizer = (function ($) {
 				update: function () {
 					var widget_container_ids = control.section_content.sortable('toArray');
 					var widget_ids = $.map( widget_container_ids, function ( widget_container_id ) {
-						return $('#' + widget_container_id).find(':input[name=widget-id]').val();
+						return $(widget_container_id).find(':input[name=widget-id]').val();
 					});
 					control.setting( widget_ids );
 				}
