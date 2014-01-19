@@ -120,7 +120,6 @@ var WidgetCustomizer = (function ($) {
 			control.control_section = control.container.closest( '.control-section' );
 			control.section_content = control.container.closest( '.accordion-section-content' );
 			control.setupModel();
-			control.setupSortable();
 			control.setupAddition();
 		},
 
