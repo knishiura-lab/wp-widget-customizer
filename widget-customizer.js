@@ -770,7 +770,7 @@ var WidgetCustomizer = (function ($) {
 	 * @returns {DOMWindow}
 	 */
 	self.getPreviewWindow = function (){
-		return $( '#customize-preview' ).find( 'iframe' ).prop( 'contentWindow' );
+		return $( '#customize-preview' ).find( 'iframe' ).prop( 'contentDocument' );
 	};
 
 	/**
