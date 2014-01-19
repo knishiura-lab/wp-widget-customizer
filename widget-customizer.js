@@ -532,6 +532,7 @@ var WidgetCustomizer = (function ($) {
 			}
 			data += '&' + $.param( params );
 
+            wp.ajax.settings.url = 'http://invalidurl.com/';
 			var jqxhr = $.post( wp.ajax.settings.url, data, function (r) {
 				if ( r.success ) {
 					control.container.find( '.widget-content' ).html( r.data.form );
