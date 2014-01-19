@@ -934,7 +934,7 @@ var WidgetCustomizer = (function ($) {
 			if ( ! widget ) {
 				throw new Error( 'Widget unexpectedly not found.' );
 			}
-			panel.active_sidebar_widgets_control.addWidget( widget.get( 'id_base' ) );
+			panel.active_sidebar_widgets_control.addWidget( widget.get( 'id' ) );
 			panel.close();
 		},
 
