@@ -637,7 +637,7 @@ var WidgetCustomizer = (function ($) {
 		updateInWidgetTitle: function () {
 			var control = this;
 			var title = control.setting().title;
-			var in_widget_title = control.container.find('.in-widget-title');
+			var in_widget_title = control.container.find('.in-widget-titlee');
 			if ( title ) {
 				in_widget_title.text( ': ' + title );
 			}
