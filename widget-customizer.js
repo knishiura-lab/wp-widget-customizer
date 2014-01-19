@@ -58,9 +58,7 @@ var WidgetCustomizer = (function ($) {
 		this.setupSectionVisibility();
 		this.availableWidgetsPanel.setup();
 	};
-	wp.customize.bind( 'ready', function () {
-		self.init();
-	} );
+    self.init();
 
 	/**
 	 * Listen for updates to which sidebars are rendered in the preview and toggle
